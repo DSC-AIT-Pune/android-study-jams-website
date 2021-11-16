@@ -1,0 +1,13 @@
+.footer {
+	height: 48px;
+	width: auto;
+	padding: 0.625rem;
+	background-color: #142f40;
+	box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
+}
+
+.about-us {
+	margin: 0 1.5rem;
+	padding: 0 0.75rem;
+	color: white;
+}

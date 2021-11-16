@@ -1,0 +1,15 @@
+.home-section {
+	margin: 0 1.5rem;
+	padding: 0 0.75rem;
+}
+
+.poster-container {
+	height: 663px;
+	width: 100%;
+	position: relative;
+}
+
+.poster {
+	height: 100%;
+	width: 100%;
+}

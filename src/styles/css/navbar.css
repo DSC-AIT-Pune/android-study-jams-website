@@ -1,0 +1,83 @@
+.navbar {
+	height: 48px;
+	width: auto;
+	padding: 0.625rem;
+	background-color: #142f40;
+	box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
+}
+
+.navbar-items {
+	height: 100%;
+	margin: 0 1.5rem;
+	padding: 0 0.75rem;
+	display: flex;
+}
+
+.navbar-logo-container {
+	width: auto;
+}
+
+.navbar-title-container {
+	width: 35%;
+	display: flex;
+    align-items: center;
+}
+
+.navbar-links-container {
+	width: 65%;
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-logo {
+	height: 100%;
+}
+
+.navbar-title {
+	color: #00de7a;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 0.4rem 1.1875rem;
+}
+
+.navbar-title-link {
+	cursor: pointer;
+	text-decoration: none;
+	color: #00de7a;
+}
+
+.android-logo {
+	height: 125%;
+	padding-right: 2%;
+}
+
+.navbar-links {
+	color: #00de7a;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 0.4rem 1.1875rem;
+	text-align: center;
+}
+
+.navbar-title-link:hover {
+	color: #142f40;
+    background-color: #00de7a;
+    border-radius: 25px;
+    padding: 0.4rem 1.1875rem;
+    box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
+    transform: scale(1.05);
+}
+
+.navbar-links:hover {
+	color: #142f40;
+	background-color: #00de7a;
+	border-radius: 25px;
+	font-weight: 500;
+	box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
+	transform: scale(1.05);
+}
+
+.navbar-logo:active, .navbar-title-link:active, .navbar-links:active {
+	transform: translateY(0.125rem);
+}
