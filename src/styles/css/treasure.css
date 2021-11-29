@@ -1,0 +1,13 @@
+.treasure-section{
+    height: 100vh;
+    width: 100%;
+    color :white;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+}
+.treasure-section p{
+    font-size:50px;
+    font-weight: bolder;
+}

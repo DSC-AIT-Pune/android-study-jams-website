@@ -6,7 +6,8 @@ import "../styles/css/auth.css";
 import loginPage from "../styles/images/loginPage.svg";
 import mail from "../styles/images/mail.svg";
 import lock from "../styles/images/lock.svg";
-import Fire from "./Fire";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
 
 const Auth = () => {
   const [user, setUser] = useState("");
@@ -15,6 +16,16 @@ const Auth = () => {
   const [passwordError, setPasswordError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
+  const firebaseConfig = {
+    apiKey: "AIzaSyCEJxGq1DKGsb0eBuoc2jeZ2yL3NpBAg_Y",
+    authDomain: "login-9cc04.firebaseapp.com",
+    projectId: "login-9cc04",
+    storageBucket: "login-9cc04.appspot.com",
+    messagingSenderId: "410391250548",
+    appId: "1:410391250548:web:0a9672719b7d84a91a3321",
+  };
+  const Fire = firebase.initializeApp(firebaseConfig);
+
   const clearInputs = () => {
     setEmail("");
     setPassword("");
@@ -23,16 +34,17 @@ const Auth = () => {
     setEmailError("");
     setPasswordError("");
   };
-  const handleLogin = () => { 
+  const handleLogin = () => {
     clearErrors();
     Fire.auth()
       .signInWithEmailAndPassword(email, password)
       .catch((err) => {
-        switch (err.code) {
+        switch (err) {
           case "auth/invalid-email":
           case "auth/user-disabled":
           case "auth/user-not-found":
-            setPasswordError(err.message);
+            setEmailError(err.message);
+            break;
           case "auth/wrong-password":
             setPasswordError(err.message);
             break;
@@ -44,10 +56,11 @@ const Auth = () => {
     Fire.auth()
       .createUserWithEmailAndPassword(email, password)
       .catch((err) => {
-        switch (err.code) {
+        switch (err) {
           case "auth/email-already-in-use":
           case "auth/invalid-email":
             setEmailError(err.message);
+            break;
           case "auth/wrong-password":
             setPasswordError(err.message);
             break;
@@ -76,7 +89,7 @@ const Auth = () => {
       <div className="loginContainer">
         <div className="sigin_card">
           <form>
-            <h1>Log In </h1>
+            <h1>{hasAccount ? "Sign In" : "Sign Up"}</h1>
             <br />
             <div>
               {" "}
@@ -84,11 +97,12 @@ const Auth = () => {
               <div className="inputContainer">
                 <img src={mail} alt="" />
                 <input
-                  type="text"
+                  type="email"
                   name="email"
-                  onChange={" "}
-                  value={"email"}
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                   placeholder="Enter email id "
+                  required
                 ></input>
               </div>
             </div>
@@ -98,34 +112,79 @@ const Auth = () => {
               <div className="inputContainer">
                 <img src={lock} alt="" />
                 <input
-                  type="text"
+                  type="password"
                   name="password"
-                  onChange={" "}
-                  value={"password"}
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
                   placeholder="Enter password  "
+                  required
                 ></input>
               </div>
             </div>
-            <button onClick={" "} className="loginSubmitButton">
-              Submit
-            </button>
-            <div style={{ color: "red", fontSize: "18px" }}>{}</div>
+            <div>
+              {hasAccount ? (
+                <>
+                  <button className="loginSubmitButton" onClick={handleLogin}>
+                    Sign In{" "}
+                  </button>
+                  <div className="hr"></div>{" "}
+                  <p
+                    style={{
+                      backgroundColor: "transparent",
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "white",
+                    }}
+                  >
+                    {" "}
+                    Don't have a account ?{" "}
+                    <span
+                      onClick={() => {
+                        setHasAccount(false);
+                      }}
+                    >
+                      {" "}
+                      Sign Up{" "}
+                    </span>
+                  </p>
+                </>
+              ) : (
+                <>
+                  <button className="loginSubmitButton" onClick={handleSignUp}>
+                    Sign Up{" "}
+                  </button>{" "}
+                  <div className="hr"></div>
+                  <p
+                    style={{
+                      backgroundColor: "transparent",
+                      display: "flex",
+                      justifyContent: "center",
+                      color: "white",
+                    }}
+                  >
+                    {" "}
+                    Have a account ?{" "}
+                    <span
+                      onClick={() => {
+                        setHasAccount(true);
+                      }}
+                    >
+                      Sign In
+                    </span>
+                  </p>
+                </>
+              )}
+            </div>
+            {/* <button onClick={""} className="loginSubmitButton">
+               
+            </button> */}
+            <div style={{ color: "red", fontSize: "18px" }}>
+              {passwordError}
+            </div>
+            <div style={{ color: "red", fontSize: "18px" }}>{emailError}</div>
             <br />
             <br />
-            <div className="hr"></div>
           </form>
-
-          <Link
-            to="/signIn"
-            style={{
-              backgroundColor: "transparent",
-              display: "flex",
-              justifyContent: "center",
-              color: "white",
-            }}
-          >
-            Don't have a account ? Want to make One !
-          </Link>
         </div>
 
         <div className="loginImage">

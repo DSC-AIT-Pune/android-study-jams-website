@@ -18,25 +18,25 @@ const Contact = () => {
       </div>
       <div className="links">
         <div className="linkContainer">
-          <a href="https://google.com" className="linkBox">
+          <a href="https://www.facebook.com/dsc.aitpune" className="linkBox">
             <img src={facebook} alt="" />
             facebook
           </a>
-          <a href="https://google.com" className="linkBox">
+          <a href="https://www.instagram.com/gdsc_aitpune/" className="linkBox">
             <img src={instagram} alt="" />
             Instagram
           </a>
-          <a href="https://google.com" className="linkBox">
+          <a href="https://discord.com/invite/56sCubbrtp" className="linkBox">
             <img src={discord} alt="" />
             Discord
           </a>
 
-          <a href="https://google.com" className="linkBox">
+          <a href="https://www.linkedin.com/company/gdsc-aitpune/" className="linkBox">
             {" "}
             <img src={linkedIn} alt="" />
             LinkedIn
           </a>
-          <a href="https://google.com" className="linkBox">
+          <a href="https://github.com/DSC-AIT-Pune" className="linkBox">
             <img src={github} alt="" />
             Github
           </a>

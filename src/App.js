@@ -7,15 +7,19 @@ import NavBar from "./common/Navbar";
 import Home from "./components/Home";
 import AboutUs from "./common/AboutUs";
 import Auth from "./components/Auth";
+import Treasure from "./components/Treasure";
+import Speakers from "./components/Speakers";
 const App = () => {
   return (
     <React.Fragment>
       <NavBar />
       <main className="body">
         <Switch>
-          {/* <Route path="/" exact component={Auth} /> */}
-          <Route path="/" exact component={Home} />
-          <Route path="/Schedule" component={Schedule} />
+          <Route  exact path="/"   component={Home} />
+          <Route  exact path="/Schedule" component={Schedule} />
+          <Route  exact path="/login" component={Auth} />
+          <Route  exact path="/treasure" component={Treasure} />
+          <Route  exact path="/speakers" component={Speakers} />
           <Redirect to="/notFound" />
         </Switch>
       </main>

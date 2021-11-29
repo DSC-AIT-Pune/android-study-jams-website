@@ -3,14 +3,21 @@
   padding: 0px;
   white-space: none;
 }
-.home-section {
-  height: 400vh;
-  /* margin: 0 1.5rem; */
-  /* padding: 0 0.75rem; */
+.speakers-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.home-section {
+  height: 300vh;
+  /* margin: 0 1.5rem; */
+  /* padding: 0 0.75rem; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 .poster-container {
@@ -235,6 +242,12 @@ button img {
   background-position: center;
   background-repeat: no-repeat;
 }
+.reverse {
+  flex-direction: row-reverse;
+}
+.speaker2 {
+  background-image: url("https://avatars.githubusercontent.com/u/54761454?v=4");
+}
 
 /* ############################### Media Query ###########################################  */
 /* ############################### Media Query ###########################################  */
@@ -263,6 +276,18 @@ button img {
     margin: 20px 0px;
   }
   button img {
+    height: 60%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .button {
+    padding: 2px 40px;
+
+    font-size: 12px;
+
+    margin: 20px 0px;
+  }
+  .button img {
     height: 60%;
     margin-right: 10px;
     margin-left: 10px;

@@ -11,6 +11,8 @@ import "../styles/css/home.css";
 import poster from "../styles/images/gdscait-android-study-jams.svg";
 import start from "../styles/images/startIcon.svg";
 import mobileSvg from "../styles/images/mobileSvg.svg";
+import Timeline from "../common/Timeline";
+
 
 const Home = () => {
   return (
@@ -67,7 +69,7 @@ const Home = () => {
         </div>
         <div className="detailCircle"></div>
       </div>
-      <div className="speakerPage">
+      {/* <div className="speakerPage" id="speakers">
         <div className="speakerText">
           <h1 className="speakerintroheading">Samik Choudhary </h1>
           <p className="detailintro">
@@ -83,22 +85,41 @@ const Home = () => {
         </div>
         <div className="speakerSvg">
           <div className="circle1">
-          <div className="circle2">
-          <div className="circle4"></div>
-          <div className="circle3"></div>
+            <div className="circle2">
+              <div className="circle4"></div>
+              <div className="circle3"></div>
+            </div>
           </div>
-
-          </div>
-         
-         
-         
-          
         </div>
       </div>
+      <div className="speakerPage reverse">
+        <div className="speakerText">
+          <h1 className="speakerintroheading">Samik Choudhary </h1>
+          <p className="detailintro">
+            This is all about android study jams and how to have to proceed to
+            gain knowlege and goodies from Us this is all about android study
+            jams and how to have to proceed to gain knowlege and goodies from
+            Us...
+          </p>
 
-      {/* <Schedule />
-      <Speakers />
-      <Treasure /> */}
+          <button onClick={()=>{}}>
+            Know More <img src={rulebookSvg} alt="" />
+          </button>
+        </div>
+        <div className="speakerSvg">
+          <div className="circle1">
+            <div className="circle2 speaker2">
+              <div className="circle4"></div>
+              <div className="circle3"></div>
+            </div>
+          </div>
+        </div>
+        
+      </div> */}
+     
+
+
+      
     </div>
   );
 };
