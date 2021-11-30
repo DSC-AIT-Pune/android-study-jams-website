@@ -5,6 +5,7 @@ import Speakers from "./Speakers.jsx";
 import Treasure from "./Treasure.jsx";
 import detailSvg from "../styles/images/detailSvg.svg";
 import rulebookSvg from "../styles/images/rulebookSvg.svg";
+import { Link } from "react-router-dom";
 
 import "../styles/css/home.css";
 
@@ -12,9 +13,15 @@ import poster from "../styles/images/gdscait-android-study-jams.svg";
 import start from "../styles/images/startIcon.svg";
 import mobileSvg from "../styles/images/mobileSvg.svg";
 import Timeline from "../common/Timeline";
-
+import { useHistory } from "react-router-dom";
 
 const Home = () => {
+  const history = useHistory();
+  // const handleStart = () =>{
+  //   history.push("/login");
+
+  // }
+
   return (
     <div className="home-section">
       <div className="poster-container">
@@ -40,9 +47,11 @@ const Home = () => {
           <p className="p3">Developer </p>
           <p className="p4">Android Study Jams</p>
           <button>
-            {" "}
             <img src={start} />
-            Start Now !!!!
+            <Link to="/login" style={{ color: "white" }}>
+              {" "}
+              Start Now !!!!
+            </Link>
           </button>
         </div>
         <div className="regSvg">
@@ -57,14 +66,19 @@ const Home = () => {
         <div className="detailText">
           <h1 className="detailintroheading">Android Study Jams </h1>
           <p className="detailintro">
-            This is all about android study jams and how to have to proceed to
-            gain knowlege and goodies from Us this is all about android study
-            jams and how to have to proceed to gain knowlege and goodies from
-            Us...
+          Android Study Jams is community-organized study groups for people to learn how to build Android apps in the Kotlin programming language, using the curriculum provided by Google. 
+
+          Android Basics is a series of sessions focused specifically on learning how to build Android apps without prior Android experience....
           </p>
 
           <button>
-            Rulebook <img src={rulebookSvg} alt="" />
+            <a
+              href="https://developer.android.com/courses/android-basics-kotlin/course"
+              style={{ color: "white" }}
+            >
+              Explore
+            </a>{" "}
+            <img src={rulebookSvg} alt="" />
           </button>
         </div>
         <div className="detailCircle"></div>
@@ -116,10 +130,6 @@ const Home = () => {
         </div>
         
       </div> */}
-     
-
-
-      
     </div>
   );
 };

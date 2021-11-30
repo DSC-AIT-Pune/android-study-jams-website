@@ -6,8 +6,8 @@ const Home = () => {
 	return (
 		<div className="schedule-section">
 			  <div>
-      <h1>Schedule </h1>
-        <h2>Timeline that shows you where you are !!!!!! </h2>
+      {/* <h1>Schedule </h1>
+        <h2>Timeline that shows you where you are !!!!!! </h2> */}
 
       </div>
      

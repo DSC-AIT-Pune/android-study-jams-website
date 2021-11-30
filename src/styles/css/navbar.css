@@ -20,9 +20,14 @@
 .navbar-logo-container {
   width: auto;
 }
+.navbar-logo-container img {
+  width: 40px;
+  height: 40px;
+}
 
 .navbar-title-container {
   width: 35%;
+  height: 40px;
   display: flex;
   align-items: center;
 }
@@ -112,25 +117,29 @@
   }
   .mobileNavbar {
     display: inline-block;
-    position: absolute;
-    right: 5%;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    padding: 10px;
+    background-color: #09394e;
+    z-index: 888;
   }
   .columnNavbar {
     display: flex;
     height: auto;
-    width: auto;
+    width: 100%;
     /* background-color: #2048618a; */
     /* background-color: #142f40; */
 
-    flex-direction: column;
-    position: absolute;
-    right: 8%;
-    top: 48px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
   }
   .columnNavbar img {
     height: 35px;
     width: 35px;
-    margin: 4px;
+    /* margin: 4px; */
   }
   .upArrow {
     display: inline-block;
@@ -146,9 +155,6 @@
     /* align-items: flex-end; */
   }
 
-  .home:hover::after {
-    content: "Home";
-  }
   .home:hover {
     display: flex;
     justify-content: center;
@@ -166,26 +172,6 @@
     justify-content: center;
   }
   .close:hover {
-    display: flex;
-    justify-content: center;
-  }
-  .calender:hover::after {
-    content: "Calender";
-    display: flex;
-    justify-content: center;
-  }
-  .contact:hover::after {
-    content: "Contact";
-    display: flex;
-    justify-content: center;
-  }
-  .Scoreboard:hover::after {
-    content: "Scoreboard";
-    display: flex;
-    justify-content: center;
-  }
-  .close:hover::after {
-    content: "Close";
     display: flex;
     justify-content: center;
   }

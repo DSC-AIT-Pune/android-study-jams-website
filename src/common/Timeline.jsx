@@ -4,16 +4,16 @@ import pin from "../styles/images/pin.svg"
 
 export const Timeline = () => {
   const [schedule, setSchedule] = useState([
-    { title: "Introductory Session", content: "this is 1 content", date: "1s t Dec" },
-    { title: "Kotlin Basics & OOPs", content: "this is 2 content", date: " 3rd Dec" },
-    { title: "Higher Order Function", content: "this is 3 content", date: "4th Dec" },
-    { title: "XML , UI (Basics) & OOPs", content: "this is 3 content", date: "11th Dec" },
-    { title: "Chat Applcation UI", content: "this is 3 content", date: "12th Dec" },
-    { title: "Firevase & Authentication", content: "this is 3 content", date: "18th Dec" },
-    { title: "Backend, API", content: "this is 3 content", date: "19th Dec" },
-    { title: "ListView & RecycleView", content: "this is 3 content", date: "25th Dec" },
-    { title: "Chat Application Finslisation", content: "this is 3 content", date: "26th Dec" },
-    { title: "Hackathon Announcement ", content: "this is 3 content", date: "29th Dec" },
+    { title: "Introductory Session", content: "Know All about Android Study Jams 2021", date: "1s t Dec" },
+    { title: "Kotlin Basics & OOPs", content: "Learn all the Kotlin basics of programming and introduction to Object Oriented Programming concepts", date: " 3rd Dec" },
+    { title: "Higher Order Function", content: "Learn to use higher order functions in Kotlin", date: "4th Dec" },
+    { title: "XML , UI (Basics) & OOPs", content: "Learn how to design the UI of an Android Application", date: "11th Dec" },
+    { title: "Chat Applcation UI", content: "Learn to build the UI of a chat application", date: "12th Dec" },
+    { title: "Firevase & Authentication", content: "Learn to use the firebase database and authentication in it", date: "18th Dec" },
+    { title: "Backend, API", content: "Learn to integrate API in Android Application", date: "19th Dec" },
+    { title: "ListView & RecycleView", content: "Learn to display the content in the app from storage", date: "25th Dec" },
+    { title: "Chat Application Finslisation", content: "Final working chat application finalisation", date: "26th Dec" },
+    { title: "Hackathon Announcement ", content: "A hackathon to test your skills about what you have learnt in Android Study Jams 2021", date: "29th Dec" },
   ]);
   
 

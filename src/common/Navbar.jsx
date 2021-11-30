@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/css/navbar.css";
 
 import kotlinHero from "../styles/images/gdscLogo.svg";
@@ -7,9 +8,12 @@ import android from "../styles/images/android.svg";
 import more from "../styles/images/more.svg";
 import home from "../styles/images/home.svg";
 import calender from "../styles/images/calender.svg";
-import socreboard from "../styles/images/socreboard.svg";
+import scoreboard from "../styles/images/scoreboard.svg";
 import contact from "../styles/images/contact.svg";
 import up from "../styles/images/up.svg";
+import BottomNavBar from "./BottomNavbar";
+import person from "../styles/images/person.svg"
+
 
 const Navbar = () => {
   return (
@@ -40,32 +44,33 @@ const Navbar = () => {
             Speakers
           </NavLink>
           <NavLink to="/treasure" className="navbar-links">
-            Treasure
+            Hackathon
           </NavLink>
-          <NavLink to="/login" className="navbar-links">
-            Login/singIN
+          <NavLink to="/login" className="navbar-links" style={{ backgroundColor: "#13bb5e"}}>
+            Login <img src={person} alt="" />
           </NavLink>
         </div>
         <div className="mobileNavbar">
-          <img src={more} alt="" />
+          
           <div className="columnNavbar">
-            <a className="home" href="">
+            <Link className="home" to="/">
               <img src={home} alt="" />
-            </a>
-            <a className="calender" href="">
+            </Link>
+            <Link className="calender" to="/Schedule">
               <img src={calender} alt="" />
-            </a>
+            </Link>
 
-            <a className="contact" href="">
+            <Link className="contact" to="/speakers">
               <img src={contact} alt="" />
-            </a>
-            <a className="Scoreboard" href="">
-              <img src={socreboard} alt="" />
-            </a>
-            <a className="close" href="">
-              <img className="upArrow" src={up} alt="" />
-            </a>
-          </div>
+            </Link>
+            <Link className="Scoreboard" to="/treasure">
+              <img src={scoreboard} alt="" />
+            </Link>
+            <Link className="close" to="/login">
+              <img className="upArrow" src={person} alt="" />
+            </Link>
+          </div> 
+          
         </div>
       </div>
     </div>

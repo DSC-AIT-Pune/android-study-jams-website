@@ -9,6 +9,7 @@ import AboutUs from "./common/AboutUs";
 import Auth from "./components/Auth";
 import Treasure from "./components/Treasure";
 import Speakers from "./components/Speakers";
+import "./styles/css/app.css";
 const App = () => {
   return (
     <React.Fragment>

@@ -3,6 +3,9 @@
   padding: 0px;
   white-space: none;
 }
+body {
+  width: 100%;
+}
 .speakers-section {
   display: flex;
   justify-content: center;
@@ -11,6 +14,7 @@
 }
 .home-section {
   height: 300vh;
+  width: 100%;
   /* margin: 0 1.5rem; */
   /* padding: 0 0.75rem; */
   display: flex;
@@ -207,7 +211,8 @@ button img {
   width: 90%;
   aspect-ratio: 1/1;
   background-color: green;
-  background-image: url(../images/samik.svg);
+  background-image: url("https://avatars.githubusercontent.com/u/54761454?v=4");
+
   box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.424);
   background-size: contain;
   border-radius: 50%;
@@ -246,7 +251,12 @@ button img {
   flex-direction: row-reverse;
 }
 .speaker2 {
-  background-image: url("https://avatars.githubusercontent.com/u/54761454?v=4");
+  background-image: url("https://media.discordapp.net/attachments/881063169810894958/915250639213301770/1630140805907.jpeg?width=671&height=671");
+}
+.detailintro {
+  font-weight: thin;
+  margin-top: 20px;
+  color: rgb(212, 211, 211);
 }
 
 /* ############################### Media Query ###########################################  */
@@ -402,5 +412,19 @@ button img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .speakerText1 {
+    margin-top: 180px;
+  }
+  .detailintro {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .speakers-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 250vh; */
   }
 }
