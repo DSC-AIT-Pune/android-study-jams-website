@@ -6,7 +6,7 @@ const Treasure = () => {
 	return (
 		<div className="treasure-section">
 			<img src={treasure} alt="" />
-			<p>Coming Soon .......</p>
+			<p>Coming Soon...</p>
 		</div>
 	);
 };

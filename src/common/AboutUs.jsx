@@ -12,31 +12,35 @@ const Contact = () => {
       <div className="about-us">
         <h1>Contact</h1>
         <p>
-          for more info get in contact with our social media handles and explore
-          more resoureces from our community daly{" "}
+          For more info, contact us on our social media handles and explore more
+          resources from our community.{" "}
         </p>{" "}
       </div>
       <div className="links">
         <div className="linkContainer">
-          <a href="https://www.facebook.com/dsc.aitpune" className="linkBox">
+          <a href="https://www.facebook.com/dsc.aitpune" className="linkBox"  target="_blank">
             <img src={facebook} alt="" />
             facebook
           </a>
-          <a href="https://www.instagram.com/gdsc_aitpune/" className="linkBox">
+          <a href="https://www.instagram.com/gdsc_aitpune/" className="linkBox"  target="_blank">
             <img src={instagram} alt="" />
             Instagram
           </a>
-          <a href="https://discord.com/invite/56sCubbrtp" className="linkBox">
+          <a href="https://discord.com/invite/56sCubbrtp" className="linkBox"  target="_blank">
             <img src={discord} alt="" />
             Discord
           </a>
 
-          <a href="https://www.linkedin.com/company/gdsc-aitpune/" className="linkBox">
+          <a
+            href="https://www.linkedin.com/company/gdsc-aitpune/"
+            className="linkBox"
+            target="_blank"
+          >
             {" "}
             <img src={linkedIn} alt="" />
             LinkedIn
           </a>
-          <a href="https://github.com/DSC-AIT-Pune" className="linkBox">
+          <a href="https://github.com/DSC-AIT-Pune" className="linkBox"  target="_blank">
             <img src={github} alt="" />
             Github
           </a>
@@ -44,9 +48,7 @@ const Contact = () => {
       </div>
       <div className="made">
         <p>
-          Made with  ❤️ 
-		  {/* &#128148; */}
-		    by GDSC AIT Pune{" "}
+          Made with <span style={{color:"red"}}>❤️</span> by GDSC AIT Pune{" "}
         </p>
       </div>
     </div>

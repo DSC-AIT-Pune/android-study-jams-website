@@ -1,5 +1,5 @@
 .treasure-section {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   color: white;
   display: flex;
@@ -8,10 +8,10 @@
   flex-direction: column;
 }
 .treasure-section img {
-  height: 50%;
+  height: 65%;
 }
 .treasure-section p {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bolder;
 }
 @media only screen and (max-width: 600px) {

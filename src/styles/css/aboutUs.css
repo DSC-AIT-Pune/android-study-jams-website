@@ -16,6 +16,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 90px;
 }
 
 .about-us {
@@ -23,10 +24,10 @@
   width: 20%;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 16px;
 }
 .about-us p {
-  line-height: 35px;
+  line-height: 24px;
   margin-top: 10px;
   font-weight: thin;
 }
@@ -50,12 +51,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 50px;
-  margin-top: -150px;
+  margin-top: -100px;
 }
 
 .linkBox {
-  width: 200px;
-  height: 170px;
+  width: 150px;
+  height: 130px;
   background-color: #09394e;
   margin: 10px;
   border-radius: 20px;

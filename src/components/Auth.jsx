@@ -6,6 +6,7 @@ import "../styles/css/auth.css";
 import loginPage from "../styles/images/loginPage.svg";
 import mail from "../styles/images/mail.svg";
 import lock from "../styles/images/lock.svg";
+import lock2 from "../styles/images/lock2.svg";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 
@@ -124,8 +125,13 @@ const Auth = () => {
             <div>
               {hasAccount ? (
                 <>
-                  <button className="loginSubmitButton" onClick={handleLogin}>
-                    Sign In{" "}
+                  <button
+                    className="loginSubmitButton"
+
+                    // onClick={handleLogin}
+                  >
+                    {/* Sign In  */}
+                    <img src={lock2} style={{ height: "24px" }}></img>{" "}
                   </button>
                   <div className="hr"></div>{" "}
                   <p
@@ -144,14 +150,18 @@ const Auth = () => {
                       }}
                     >
                       {" "}
-                      Sign Up{" "}
+                      Sign Up
                     </span>
                   </p>
                 </>
               ) : (
                 <>
-                  <button className="loginSubmitButton" onClick={handleSignUp}>
-                    Sign Up{" "}
+                  <button
+                    className="loginSubmitButton"
+                    // onClick={handleSignUp}
+                  >
+                    {/* Sign Up  */}
+                    <img src={lock2} alt="" style={{ height: "24px" }} />{" "}
                   </button>{" "}
                   <div className="hr"></div>
                   <p

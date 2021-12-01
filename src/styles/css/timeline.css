@@ -162,7 +162,7 @@ header h1 {
 .cd-timeline-block {
   position: relative;
   background-color: transparent;
-  margin: 1em 0;
+  margin: 1em 3em;
 }
 .cd-timeline-block::after {
   clear: both;
@@ -292,7 +292,7 @@ header h1 {
   position: relative;
   margin-left: 60px;
   background: #ffffffda;
-  border-radius: 0.25em;
+  border-radius: 1.5em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
 }
@@ -521,5 +521,20 @@ header h1 {
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .TimelineContainer {
+    height: 70%;
+    width: 100%;
+    font-size: 75%;
+    font-family: "Droid Serif", serif;
+    color: #7f8c97;
+    /* background-color:transparent; */
+    background-image: url("../images/bgImage.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    margin-top: 5vh;
   }
 }

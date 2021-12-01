@@ -47,11 +47,18 @@ const Home = () => {
           <p className="p3">Developer </p>
           <p className="p4">Android Study Jams</p>
           <button>
-            <img src={start} />
-            <Link to="/login" style={{ color: "white" }}>
-              {" "}
-              Start Now !!!!
+            <Link
+              to="/login"
+              style={{
+                color: "#142f40",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              Start Now
             </Link>
+            <img src={start} />
           </button>
         </div>
         <div className="regSvg">
@@ -66,15 +73,18 @@ const Home = () => {
         <div className="detailText">
           <h1 className="detailintroheading">Android Study Jams </h1>
           <p className="detailintro">
-          Android Study Jams is community-organized study groups for people to learn how to build Android apps in the Kotlin programming language, using the curriculum provided by Google. 
-
-          Android Basics is a series of sessions focused specifically on learning how to build Android apps without prior Android experience....
+            Android Study Jams is community-organized study groups for people to
+            learn how to build Android apps in the Kotlin programming language,
+            using the curriculum provided by Google. Android Basics is a series
+            of sessions focused specifically on learning how to build Android
+            apps without prior Android experience....
           </p>
 
           <button>
             <a
-              href="https://developer.android.com/courses/android-basics-kotlin/course"
-              style={{ color: "white" }}
+              href="https://developer.android.com/courses/android-development-with-kotlin/course?utm_source=dac&utm_medium=website&utm_campaign=edu
+              "
+              style={{ color: "#142f40" }}
             >
               Explore
             </a>{" "}

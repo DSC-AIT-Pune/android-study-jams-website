@@ -37,13 +37,13 @@ const Navbar = () => {
           <NavLink to="/" className="navbar-links">
             Home
           </NavLink>
-          <NavLink to="/Schedule" className="navbar-links">
+          <NavLink to="/schedule" className="navbar-links">
             Schedule
           </NavLink>
           <NavLink to="/speakers" className="navbar-links">
             Speakers
           </NavLink>
-          <NavLink to="/treasure" className="navbar-links">
+          <NavLink to="/hackathon" className="navbar-links">
             Hackathon
           </NavLink>
           <NavLink to="/login" className="navbar-links" style={{ backgroundColor: "#13bb5e"}}>
@@ -56,19 +56,19 @@ const Navbar = () => {
             <Link className="home" to="/">
               <img src={home} alt="" />
             </Link>
-            <Link className="calender" to="/Schedule">
+            <Link className="calender" to="/schedule">
               <img src={calender} alt="" />
             </Link>
 
             <Link className="contact" to="/speakers">
               <img src={contact} alt="" />
             </Link>
-            <Link className="Scoreboard" to="/treasure">
+            <Link className="Scoreboard" to="/hackathon">
               <img src={scoreboard} alt="" />
             </Link>
-            <Link className="close" to="/login">
+            {/* <Link className="close" to="/login">
               <img className="upArrow" src={person} alt="" />
-            </Link>
+            </Link> */}
           </div> 
           
         </div>
