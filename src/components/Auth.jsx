@@ -92,11 +92,11 @@ const Auth = () => {
           <form>
             <h1>{hasAccount ? "Sign In" : "Sign Up"}</h1>
             <br />
-            <div>
+            <div style={{paddingBottom: "18px"}}>
               {" "}
               Email Address : <br />
-              <div className="inputContainer">
-                <img src={mail} alt="" />
+              <div className="inputContainer" style={{paddingTop: "3px"}}>
+{/*                 <img src={mail} alt="" /> */}
                 <input
                   type="email"
                   name="email"
@@ -110,8 +110,8 @@ const Auth = () => {
             <div>
               {" "}
               Password : <br />
-              <div className="inputContainer">
-                <img src={lock} alt="" />
+              <div className="inputContainer"  style={{paddingTop: "3px"}}>
+{/*                 <img src={lock} alt="" /> */}
                 <input
                   type="password"
                   name="password"
