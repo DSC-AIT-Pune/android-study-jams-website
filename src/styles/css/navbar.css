@@ -1,83 +1,199 @@
+@font-face {
+	font-family: 'GoogleSans';
+	src: local('GoogleSans-Medium'), url(../fonts/GoogleSans/GoogleSans-Medium-v1.27.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'GoogleSans-MediumItalic';
+	src: local('GoogleSans-MediumItalic'), url(../fonts/GoogleSans/GoogleSans-MediumItalic-v1.27.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'GoogleSans-Regular';
+	src: local('GoogleSans-Regular'), url(../fonts/GoogleSans/GoogleSans-Regular-v1.27.ttf) format('truetype');
+}
+
+* {
+    font-family: 'GoogleSans-Regular' !important;
+}
+
+
 .navbar {
-	height: 48px;
-	width: auto;
-	padding: 0.625rem;
-	background-color: #142f40;
-	box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
+  height: 68px;
+  width: 100%;
+  padding: 0.625rem;
+  padding-top: 20px;
+  background-color: #142f40;
+  box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
 }
 
 .navbar-items {
-	height: 100%;
-	margin: 0 1.5rem;
-	padding: 0 0.75rem;
-	display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 1.5rem;
+  padding: 0 0.75rem;
+  display: flex;
 }
 
 .navbar-logo-container {
-	width: auto;
+  width: auto;
+}
+.navbar-logo-container img {
+  width: 40px;
+  height: 40px;
 }
 
 .navbar-title-container {
-	width: 35%;
-	display: flex;
-    align-items: center;
+  width: 35%;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-links-container {
-	width: 65%;
-	display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navbar-logo {
-	height: 100%;
+  height: 100%;
 }
 
 .navbar-title {
-	color: #00de7a;
-	font-size: 20px;
-	font-weight: 600;
-	padding: 0.4rem 1.1875rem;
+  color: #00de7a;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0.4rem 1.1875rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar-title-link {
-	cursor: pointer;
-	text-decoration: none;
-	color: #00de7a;
+  cursor: pointer;
+  text-decoration: none;
+
+  color: White;
+  font-weight: bold;
 }
 
 .android-logo {
-	height: 125%;
-	padding-right: 2%;
+  height: 125%;
+  padding-right: 2%;
 }
 
 .navbar-links {
-	color: #00de7a;
-	font-size: 18px;
-	text-decoration: none;
-	padding: 0.4rem 1.1875rem;
-	text-align: center;
+  color: #00de7a;
+  color: White;
+
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0.4rem 1.1875rem;
+  text-align: center;
 }
 
 .navbar-title-link:hover {
-	color: #142f40;
-    background-color: #00de7a;
-    border-radius: 25px;
-    padding: 0.4rem 1.1875rem;
-    box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
-    transform: scale(1.05);
+  color: #00de7a;
+  padding: 0.4rem 1.1875rem;
+  transform: scale(1.05);
 }
 
 .navbar-links:hover {
-	color: #142f40;
-	background-color: #00de7a;
-	border-radius: 25px;
-	font-weight: 500;
-	box-shadow: 0 4px 8px 0 rgb(0 222 112 / 15%);
-	transform: scale(1.05);
+  color: #142f40;
+  color: #00de7a;
+
+  border-bottom: 1px solid #00de7a;
+
+  font-weight: 500;
+
+  transform: scale(1.05);
 }
 
-.navbar-logo:active, .navbar-title-link:active, .navbar-links:active {
-	transform: translateY(0.125rem);
+.navbar-logo:active,
+.navbar-title-link:active,
+.navbar-links:active {
+  transform: translateY(0.125rem);
+}
+.mobileNavbar {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .navbar-title-link::after {
+    content: " | Android Study Jams 2021";
+    color: #00de7a;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-title-container {
+    width: 55%;
+    display: flex;
+    align-items: center;
+  }
+  .mobileNavbar {
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    padding: 10px;
+    background-color: #09394e;
+    z-index: 888;
+  }
+  .columnNavbar {
+    display: flex;
+    height: auto;
+    width: 100%;
+    /* background-color: #2048618a; */
+    /* background-color: #142f40; */
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+  }
+  .columnNavbar img {
+    height: 35px;
+    width: 35px;
+    /* margin: 4px; */
+  }
+  .upArrow {
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+  }
+  a {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    font-weight: bolder;
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+  }
+
+  .home:hover {
+    display: flex;
+    justify-content: center;
+  }
+  .calender:hover {
+    display: flex;
+    justify-content: center;
+  }
+  .contact:hover {
+    display: flex;
+    justify-content: center;
+  }
+  .Scoreboard:hover {
+    display: flex;
+    justify-content: center;
+  }
+  .close:hover {
+    display: flex;
+    justify-content: center;
+  }
 }

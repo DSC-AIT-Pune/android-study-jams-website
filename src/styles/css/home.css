@@ -1,15 +1,443 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  white-space: none;
+}
+body {
+  width: 100%;
+}
+.speakers-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .home-section {
-	margin: 0 1.5rem;
-	padding: 0 0.75rem;
+  height: 300vh;
+  width: 100%;
+  /* margin: 0 1.5rem; */
+  /* padding: 0 0.75rem; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 .poster-container {
-	height: 663px;
-	width: 100%;
-	position: relative;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
 .poster {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
+}
+.regPage {
+  height: 90vh;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* background-image: url("../images/bgImage.svg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.regText {
+  /* width: 30%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 10%;
+  color: white;
+}
+button {
+  background-color: #00de7a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  color: #142f40;
+
+  margin: 20px 0px;
+}
+button img {
+  height: 60%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.regSvg {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regSvg img {
+  width: 85%;
+}
+.p1 {
+  font-size: 16px;
+  font-weight: thin;
+  /* margin-top: 10px; */
+}
+.p2 {
+  font-size: 32px;
+  font-weight: regular;
+  margin-top: 5 px;
+}
+.p3 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: -18px;
+  margin-left: -5px;
+}
+.p4 {
+  font-size: 36px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.detailPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 75%;
+  /* background-image: url("../images/bgImage.svg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.detailSVG {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailSVG img {
+  width: 100%;
+  z-index: 10;
+}
+.detailText {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  margin-left: 50px;
+}
+.detailintro {
+  margin-top: 20px;
+  width: 100%;
+  line-height: 40px;
+  font-size: 18px;
+  color: rgb(218, 216, 216);
+}
+.detailintroheading {
+  font-size: 40px;
+}
+.detailCircle {
+  width: 60%;
+  /* width: 50%; */
+  aspect-ratio: 1/1;
+  background-color: #00de7a;
+  border-radius: 50%;
+  position: absolute;
+  /* top: 0px; */
+  left: -25%;
+}
+.speakerText {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  margin-left: 50px;
+}
+.speakerPage {
+  height: 70vh;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* background-image: url("../images/bgImage.svg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Speakerintroheading {
+  font-size: 40px;
+}
+.speakerSvg {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.speakerSvg img {
+  width: 85%;
+}
+.circle1 {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 55%;
+  aspect-ratio: 1/1;
+  background-color: #1ad96f;
+  border-radius: 50%;
+}
+.circle2 {
+  position: absolute;
+
+  top: 30%;
+  left: 40%;
+  width: 90%;
+  aspect-ratio: 1/1;
+  background-color: green;
+  background-image: url("https://cdn.discordapp.com/attachments/881093976520790037/915467416144871445/1593830235265.png");
+
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.424);
+  background-size: contain;
+  border-radius: 50%;
+}
+.circle3 {
+  position: absolute;
+
+  top: 50%;
+  left: -20%;
+  width: 60%;
+  aspect-ratio: 1/1;
+  background-color: #13bb5e;
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.315);
+  background-image: url(../images/hat.svg);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.circle4 {
+  position: absolute;
+
+  top: 10%;
+  left: 80%;
+  width: 25%;
+  aspect-ratio: 1/1;
+  background-color: #1e7143;
+  box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.315);
+  border-radius: 50%;
+  background-image: url(../images/pin.svg);
+  background-size: 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.speaker2 {
+  background-image: url("https://media.discordapp.net/attachments/881063169810894958/915250639213301770/1630140805907.jpeg?width=671&height=671");
+}
+.speaker3 {
+  background-image: url("https://cdn.discordapp.com/attachments/881093976520790037/915467367004393592/gfdbf.jpg");
+}
+.detailintro {
+  font-weight: thin;
+  margin-top: 20px;
+  color: rgb(212, 211, 211);
+  color: rgb(218, 216, 216);
+
+  line-height: 25px;
+}
+
+/* ############################### Media Query ###########################################  */
+/* ############################### Media Query ###########################################  */
+/* ############################### Media Query ###########################################  */
+/* ############################### Media Query ###########################################  */
+
+@media only screen and (max-width: 600px) {
+  .home-section {
+    height: auto;
+    width: 100%;
+  }
+
+  .regPage {
+    width: 100%;
+
+    flex-direction: column-reverse;
+  }
+  .regText {
+    width: 100%;
+    height: 100%;
+  }
+  button {
+    padding: 2px 40px;
+    font-size: 12px;
+    margin: 20px 0px;
+  }
+  button img {
+    height: 60%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .button {
+    padding: 2px 40px;
+
+    font-size: 12px;
+
+    margin: 20px 0px;
+  }
+  .button img {
+    height: 60%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .regSvg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .regSvg img {
+    /* width: 100%; */
+  }
+  .p1 {
+    font-size: 8px;
+    font-weight: thin;
+    /* margin-top: 10px; */
+  }
+  .p2 {
+    font-size: 16px;
+    font-weight: regular;
+    margin-top: 5px;
+  }
+  .p3 {
+    font-size: 32px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .p4 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 20px;
+  }
+  .detailPage {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  .detailSVG {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .detailSVG img {
+    width: 100%;
+    z-index: 10;
+  }
+  .detailText {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    margin-left: 0px;
+  }
+  .detailintro {
+    margin-top: 20px;
+    width: 90%;
+    line-height: 40px;
+    font-size: 14px;
+  }
+  .detailintroheading {
+    font-size: 30px;
+  }
+  .detailCircle {
+    height: 95%;
+    /* width: 50%; */
+    aspect-ratio: 1/1;
+    background-color: #00de7a;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 0px; */
+    left: -25%;
+  }
+  .poster-container {
+    display: none;
+  }
+  .detailCircle {
+    width: 85vw;
+    height: 85vw;
+    aspect-ratio: 1/1;
+    background-color: #00de7a;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: -25%;
+  }
+  .speakerPage {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 75%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .speakerText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    margin-left: 50px;
+  }
+
+  .speakerintroheading {
+    font-size: 30px;
+  }
+  .speakerSvg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .speakerText1 {
+    margin-top: 230px;
+  }
+  .detailintro {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .speakers-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 250vh; */
+  }
 }

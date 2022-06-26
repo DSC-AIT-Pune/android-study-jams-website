@@ -1,5 +1,27 @@
 /* root css starts */
+@font-face {
+	font-family: 'GoogleSans';
+	src: local('GoogleSans-Medium'), url(./styles/fonts/GoogleSans/GoogleSans-Medium-v1.27.ttf) format('truetype');
+}
 
+@font-face {
+	font-family: 'GoogleSans-MediumItalic';
+	src: local('GoogleSans-MediumItalic'), url(./styles/fonts/GoogleSans/GoogleSans-MediumItalic-v1.27.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'GoogleSans-Regular';
+	src: local('GoogleSans-Regular'), url(./styles/fonts/GoogleSans/GoogleSans-Regular-v1.27.ttf) format('truetype');
+}
+
+* {
+    font-family: 'GoogleSans-Regular' !important;
+}
+
+html{
+	background-color: #142f40;
+	 
+}
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

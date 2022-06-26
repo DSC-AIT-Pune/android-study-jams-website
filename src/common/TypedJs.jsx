@@ -19,7 +19,7 @@ class TypedJs extends Component {
 
 	render() {
 		return (
-			<div className="welcome-text-container" style={{position: "absolute", padding: "19.885rem 35.52rem"}}>
+			<div className="welcome-text-container" style={{position: "absolute",top:"50%",left:"45%"  }}>
 				<div className="welcome-text" style={{fontSize: "1.25rem", color: "white"}}>
 					<span
 						style={{ whiteSpace: 'pre' }}

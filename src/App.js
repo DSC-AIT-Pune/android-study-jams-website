@@ -1,26 +1,32 @@
-import React from 'react';
-import {Route, Switch, Redirect} from "react-router-dom";
+import React from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Schedule from "./components/Schedule";
 
-import NotFound from './components/NotFound';
+// import NotFound from './components/NotFound';
 import NavBar from "./common/Navbar";
 import Home from "./components/Home";
 import AboutUs from "./common/AboutUs";
-
+import Auth from "./components/Auth";
+import Treasure from "./components/Treasure";
+import Speakers from "./components/Speakers";
+import "./styles/css/app.css";
 const App = () => {
-	return (
-		<React.Fragment>
-			<NavBar/>
-			<main className="body">
-				<Switch>
-					<Route path="/" exact component={Home}/>
-					<Route path="/notFound" component={NotFound}/>
-					<Redirect to="/notFound"/>
-				</Switch>
-			</main>
-			<AboutUs/>
-		</React.Fragment>
-	);
+  return (
+    <React.Fragment  >
+      <NavBar />
+      <main className="body">
+        <Switch>
+          <Route  exact path="/"   component={Home} />
+          <Route  exact path="/schedule" component={Schedule} />
+          <Route  exact path="/login" component={Auth} />
+          <Route  exact path="/hackathon" component={Treasure} />
+          <Route  exact path="/speakers" component={Speakers} />
+          <Redirect to="/notFound" />
+        </Switch>
+      </main>
+      <AboutUs />
+    </React.Fragment>
+  );
 };
 
 export default App;
-
